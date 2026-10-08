@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "npm_resources": [
+    {
+      "path": "validator/xmllint-node.js",
+      "package": "xmllint-wasm",
+      "package_file": "xmllint-node.js",
+      "sha256": "135ef53a1f3be23e850ab262e39c15732c4b19df5538e6e15891aa64c7bc0f30"
+    },
+    {
+      "path": "validator/xmllint.wasm",
+      "package": "xmllint-wasm",
+      "package_file": "xmllint.wasm",
+      "sha256": "4e3cc21a67e8dd40ccb59822e4193fd1923b4cda08b40fe8ff8973de5eed9515"
+    }
+  ],
+  "source_resources": [
+    {
+      "root": "schemas",
+      "provenance": "schema-provenance.json",
+      "source_notes": "schemas/README.md"
+    }
+  ]
+}

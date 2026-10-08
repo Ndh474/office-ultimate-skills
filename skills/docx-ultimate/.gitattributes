@@ -1,0 +1,4 @@
+# Preserve exact standalone distribution bytes across Git checkouts.
+* text=auto eol=lf
+resources/** -text
+licenses/** -text

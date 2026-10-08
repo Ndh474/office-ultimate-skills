@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "origin": {
+    "repository": "Ndh474/skills",
+    "commit": "a0572754b031c67c85b39d69a8057aceb85ba122",
+    "path": "docx-ultimate/schemas"
+  },
+  "upstream_provenance": "schemas/README.md",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "90de0ecc85b90ba3f22b47a6ff7d4b132df6439b3428f50e35688269154a32b1",
+      "bytes": 3233
+    },
+    {
+      "path": "dc.xsd",
+      "sha256": "bc1d454db1bb20dfb1867a3fe0cf007775fc4afa33a5df425c12d854f049f1f6",
+      "bytes": 4112
+    },
+    {
+      "path": "dcmitype.xsd",
+      "sha256": "4980845d0bedcf45e707fa64eb47492ae4f95ac4ae42f5c3c68b58c0bc9e8e49",
+      "bytes": 1442
+    },
+    {
+      "path": "dcterms.xsd",
+      "sha256": "6328c8b574c166f8ebc28d07231e6ee47121e9791689b70c3afa665f22099fed",
+      "bytes": 11171
+    },
+    {
+      "path": "dml-chart.xsd",
+      "sha256": "4de4390a26e7e44e682ed98b39872cce2620f807f5b0de421567a43f74526388",
+      "bytes": 76483
+    },
+    {
+      "path": "dml-chartDrawing.xsd",
+      "sha256": "3fd0586f2637b98bb9886f0e0b67d89e1cc987c2d158cc7deb5f5b9890ced412",
+      "bytes": 6956
+    },
+    {
+      "path": "dml-diagram.xsd",
+      "sha256": "809f77f658f71e10f5cfbf99e25c895a23a4e62c81210b59a2fe8c7fb24849d2",
+      "bytes": 52387
+    },
+    {
+      "path": "dml-lockedCanvas.xsd",
+      "sha256": "5cb76dabd8b97d1e9308a1700b90c20139be4d50792d21a7f09789f5cccd6026",
+      "bytes": 624
+    },
+    {
+      "path": "dml-main.xsd",
+      "sha256": "6978ba7e889070b0c3cb5b546b23e5a6c3516134afc53b87a21f482ca33f3858",
+      "bytes": 155120
+    },
+    {
+      "path": "dml-picture.xsd",
+      "sha256": "5d389d42befbebd91945d620242347caecd3367f9a3a7cf8d97949507ae1f53c",
+      "bytes": 1231
+    },
+    {
+      "path": "dml-wordprocessingDrawing.xsd",
+      "sha256": "2dbfd4719505bf39b568005994a433997cbeac59cebc9d4867d564c94e9ba03a",
+      "bytes": 15082
+    },
+    {
+      "path": "opc-contentTypes.xsd",
+      "sha256": "5083a39fd5ade6790c291513d5b2a0447087424b04ae02d5f320edce2c5db158",
+      "bytes": 1960
+    },
+    {
+      "path": "opc-coreProperties.xsd",
+      "sha256": "69688ea15f82a870053b9a60c79359063dbcfeec9cdabafabad51a53934bc35b",
+      "bytes": 2565
+    },
+    {
+      "path": "opc-relationships.xsd",
+      "sha256": "ef23284866e5e1dd69eddc4f42b4efa58a9c4c4f7d94b21949887c02534c1ab4",
+      "bytes": 1341
+    },
+    {
+      "path": "root-metadata.xsd",
+      "sha256": "88f2355d73a5c35878109af13a7e1b41e3f115f510694f5ec332acf568738988",
+      "bytes": 981
+    },
+    {
+      "path": "root-wml.xsd",
+      "sha256": "34ea4f573d0cd8aaf7f9a47036c48a973fb63f5c1325ca5b78acaa8073656971",
+      "bytes": 397
+    },
+    {
+      "path": "shared-commonSimpleTypes.xsd",
+      "sha256": "48675c4f82f6b097434d4b7e313635b790257cca58fa90dd0e8f19c9affa18ed",
+      "bytes": 6501
+    },
+    {
+      "path": "shared-customXmlSchemaProperties.xsd",
+      "sha256": "0d103b99a4a8652f8871552a69d42d2a3760ac6a5e3ef02d979c4273257ff6a4",
+      "bytes": 880
+    },
+    {
+      "path": "shared-documentPropertiesCustom.xsd",
+      "sha256": "9c085407751b9061c1f996f6c39ce58451be22a8d334f09175f0e89e42736285",
+      "bytes": 2608
+    },
+    {
+      "path": "shared-documentPropertiesExtended.xsd",
+      "sha256": "bc92e36ccd233722d4c5869bec71ddc7b12e2df56059942cce5a39065cc9c368",
+      "bytes": 3507
+    },
+    {
+      "path": "shared-documentPropertiesVariantTypes.xsd",
+      "sha256": "7b5b7413e2c895b1e148e82e292a117d53c7ec65b0696c992edca57b61b4a74b",
+      "bytes": 7507
+    },
+    {
+      "path": "shared-math.xsd",
+      "sha256": "132e44dc10f2959e3f585584e5d82e7b2e329691e3010646e497710bd9774152",
+      "bytes": 23870
+    },
+    {
+      "path": "shared-relationshipReference.xsd",
+      "sha256": "12264f3c03d738311cd9237d212f1c07479e70f0cbe1ae725d29b36539aef637",
+      "bytes": 1367
+    },
+    {
+      "path": "vml-main.xsd",
+      "sha256": "335e9ecd40bb594ec4b916ac8c7b9eead4e16fe1b79f9d4105fdb1c43b66bb1c",
+      "bytes": 26718
+    },
+    {
+      "path": "vml-officeDrawing.xsd",
+      "sha256": "585bedc1313b40888dcc544cb74cd939a105ee674f3b1d3aa1cc6d34f70ff155",
+      "bytes": 25279
+    },
+    {
+      "path": "vml-presentationDrawing.xsd",
+      "sha256": "133c9f64a5c5d573b78d0a474122b22506d8eadb5e063f67cdbbb8fa2f161d0e",
+      "bytes": 535
+    },
+    {
+      "path": "vml-spreadsheetDrawing.xsd",
+      "sha256": "6bdeb169c3717eb01108853bd9fc5a3750fb1fa5b82abbdd854d49855a40f519",
+      "bytes": 5712
+    },
+    {
+      "path": "vml-wordprocessingDrawing.xsd",
+      "sha256": "475dcae1e7d1ea46232db6f8481040c15e53a52a3c256831d3df204212b0e831",
+      "bytes": 4010
+    },
+    {
+      "path": "wml.xsd",
+      "sha256": "0f7784b36ddc42950e5ff354cd608b83b60e4de39325d5568913f1225365029b",
+      "bytes": 174758
+    },
+    {
+      "path": "xml.xsd",
+      "sha256": "142e63e969a72a9e4d67a3be0e800c2f3cdc99dde15ad5382d6938b70e920275",
+      "bytes": 1029
+    }
+  ]
+}

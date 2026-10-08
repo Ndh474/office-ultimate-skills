@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "dependencies": [
+    {
+      "name": "@xmldom/xmldom",
+      "version": "0.9.12",
+      "license": "MIT",
+      "notices": [
+        "licenses/@xmldom/xmldom/LICENSE"
+      ]
+    },
+    {
+      "name": "entities",
+      "version": "8.1.0",
+      "license": "BSD-2-Clause",
+      "notices": [
+        "licenses/entities/LICENSE"
+      ]
+    },
+    {
+      "name": "linkify-it",
+      "version": "6.1.0",
+      "license": "MIT",
+      "notices": [
+        "licenses/linkify-it/LICENSE"
+      ]
+    },
+    {
+      "name": "markdown-it",
+      "version": "15.0.2",
+      "license": "MIT",
+      "notices": [
+        "licenses/markdown-it/LICENSE"
+      ]
+    },
+    {
+      "name": "mdurl",
+      "version": "2.1.0",
+      "license": "MIT",
+      "notices": [
+        "licenses/mdurl/LICENSE"
+      ]
+    },
+    {
+      "name": "pend",
+      "version": "1.2.0",
+      "license": "MIT",
+      "notices": [
+        "licenses/pend/LICENSE"
+      ]
+    },
+    {
+      "name": "punycode.js",
+      "version": "2.3.1",
+      "license": "MIT",
+      "notices": [
+        "licenses/punycode.js/LICENSE-MIT.txt"
+      ]
+    },
+    {
+      "name": "uc.micro",
+      "version": "3.0.0",
+      "license": "MIT",
+      "notices": [
+        "licenses/uc.micro/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "xmllint-wasm",
+      "version": "5.3.0",
+      "license": "MIT",
+      "notices": [
+        "licenses/xmllint-wasm/COPYING"
+      ]
+    },
+    {
+      "name": "yauzl",
+      "version": "3.4.0",
+      "license": "MIT",
+      "notices": [
+        "licenses/yauzl/LICENSE"
+      ]
+    }
+  ],
+  "vendored_resources": [
+    {
+      "root": "resources/schemas",
+      "provenance": "resources/schema-provenance.json",
+      "source_notes": "resources/schemas/README.md"
+    }
+  ],
+  "npm_resources": [
+    {
+      "path": "resources/validator/xmllint-node.js",
+      "package": "xmllint-wasm",
+      "version": "5.3.0",
+      "package_file": "xmllint-node.js",
+      "sha256": "135ef53a1f3be23e850ab262e39c15732c4b19df5538e6e15891aa64c7bc0f30"
+    },
+    {
+      "path": "resources/validator/xmllint.wasm",
+      "package": "xmllint-wasm",
+      "version": "5.3.0",
+      "package_file": "xmllint.wasm",
+      "sha256": "4e3cc21a67e8dd40ccb59822e4193fd1923b4cda08b40fe8ff8973de5eed9515"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "windows-job.cs",
+      "sha256": "3a660d7f9d32266e9e4e17918658e1872cb6468741a14aabfdaee804eff9ea52",
+      "origin": "_packages/pptx-ultimate/scripts/render/windows-job.cs",
+      "repository_commit": "a0572754b031c67c85b39d69a8057aceb85ba122",
+      "scope": "Locally maintained derivative; protocol3 separates primary/cleanup status and reports process_started only after successful ResumeThread. Windows native lifecycle acceptance remains required for DOCX.",
+      "origin_sha256": "2a9fb9b90d4773afbb004e512aa1b95c372af4c7f5e59e44671c80d010f345af"
+    }
+  ]
+}
