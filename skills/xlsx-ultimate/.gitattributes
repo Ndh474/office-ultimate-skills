@@ -1,0 +1,8 @@
+# Preserve shipped text bytes on every platform, including standalone copies.
+.gitattributes text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+dist/* text eol=lf
+# Mark the generated runtime for repository viewers.
+dist/xlsx-ultimate.mjs linguist-generated=true -diff

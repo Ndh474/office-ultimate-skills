@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- Seed remote-imported namespaces locally before the unmodified OPC schema. -->
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  <xs:import namespace="http://purl.org/dc/elements/1.1/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://purl.org/dc/dcmitype/" schemaLocation="dcmitype.xsd"/>
+  <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dcterms.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" schemaLocation="opc-coreProperties.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" schemaLocation="shared-documentPropertiesExtended.xsd"/>
+  <xs:import namespace="http://schemas.openxmlformats.org/officeDocument/2006/custom-properties" schemaLocation="shared-documentPropertiesCustom.xsd"/>
+</xs:schema>

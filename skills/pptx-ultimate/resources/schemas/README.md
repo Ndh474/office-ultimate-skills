@@ -1,0 +1,13 @@
+# S1 schema assets and coverage
+
+These are locally shipped schema data, not sibling runtime dependencies. `manifest.json` records exact source commit/path and SHA-256 for every file. Copies preserve original bytes (including BOM/line endings). Runtime hash verification fails closed if resources are missing/changed.
+
+The nine PresentationML/DrawingML closure files originate from ECMA-376 Part 4, 5th edition (December 2016), OfficeOpenXML-XMLSchema-Transitional.zip, as previously vendored under pptx-ultimate/schemas. OPC content types, relationships and core properties originate from ECMA-376 Part 2, 5th edition (December 2021), OpenPackagingConventions-XMLSchema.zip, previously vendored under docx-ultimate/schemas. Extended/custom/variant properties use the Part 4 source. Dublin Core schemas originate from https://www.dublincore.org/schemas/xmls/qdc/2003/04/02/. `xml.xsd` and `root-metadata.xsd` are authored local namespace/compilation entries, not ECMA files; the latter preloads local namespaces so official remote imports need no network. No runtime fetching is allowed.
+
+Official publications: https://ecma-international.org/publications-and-standards/standards/ecma-376/. Preserve copyright/permission notices in each source and the distribution's license notices. Do not edit the official schema files to make invalid content pass; refresh from verified source with new manifest hashes and tests.
+
+S1 validates OPC roots, core/extended/custom metadata, declared ordinary PresentationML roots and theme/table-style DrawingML roots. Chart/diagram roots and embedded XLSX are explicitly unchecked until the owning feature slice. Unknown extension/Markup Compatibility parts are reported unchecked as a whole in S1, not normalized/re-saved or claimed fully conformant. The known bullet-size-percent erratum is normalized only on a validation copy; the original bytes remain untouched. Strict OOXML is unsupported. Schema conformance does not establish package graph correctness, visual appearance, native application behavior or accessibility.
+
+## Graph rules versus schema grammar
+
+The main PresentationML part requires exactly one Presentation Properties part; this is a package relationship rule, not a `presentation.xml` child-element requirement. Normative ISO/IEC 29500 wording is reproduced by Microsoft at https://learn.microsoft.com/en-us/office/open-xml/presentation/structure-of-a-presentationml-document#presentation-properties-part. A Theme relationship per master is optional (zero-or-one). S1 reports an absent master theme as unchecked inherited/default appearance, not invalid OPC. A later new-deck authoring profile can require its own generated theme separately.

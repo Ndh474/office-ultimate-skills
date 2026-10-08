@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xlsx-ultimate.local/schemas/repair-operations.schema.json",
+  "title": "xlsx-ultimate repair operations",
+  "description": "The JSON array accepted by `xlsx-ultimate repair --operations`. Every operation names one cell and states what it expects to find there, so a stale or misidentified target is refused instead of overwritten.",
+  "type": "array",
+  "minItems": 1,
+  "maxItems": 1000,
+  "items": { "$ref": "#/$defs/operation" },
+  "$defs": {
+    "target": {
+      "type": "object",
+      "description": "A single cell. Ranges are rejected: every repair depends on the current content of one cell.",
+      "properties": {
+        "sheetName": { "type": "string", "minLength": 1, "description": "Exact worksheet name, case-sensitive." },
+        "address": { "type": "string", "pattern": "^[A-Za-z]{1,3}[0-9]+$", "description": "Single-cell A1 address, for example B7." }
+      },
+      "required": ["sheetName", "address"],
+      "additionalProperties": false
+    },
+    "operation": {
+      "oneOf": [
+        { "$ref": "#/$defs/formulaRepair" },
+        { "$ref": "#/$defs/cellTypeRepair" },
+        { "$ref": "#/$defs/dateRepair" },
+        { "$ref": "#/$defs/validationRepair" }
+      ]
+    },
+    "formulaRepair": {
+      "type": "object",
+      "title": "Replace a formula",
+      "properties": {
+        "type": { "const": "formula" },
+        "target": { "$ref": "#/$defs/target" },
+        "formula": { "type": "string", "pattern": "^=.+", "description": "The replacement formula, including the leading =." },
+        "expectedFormula": { "type": "string", "description": "Required precondition: the formula currently stored, or \"\" when the cell holds none." },
+        "expected": { "description": "Accepted as an alias for expectedFormula." },
+        "allowActiveFormula": { "type": "boolean", "default": false, "description": "Permit a formula the security audit flags as active or command-like." }
+      },
+      "required": ["type", "target", "formula"],
+      "anyOf": [{ "required": ["expectedFormula"] }, { "required": ["expected"] }],
+      "additionalProperties": false
+    },
+    "cellTypeRepair": {
+      "type": "object",
+      "title": "Convert a literal cell to another stored type",
+      "description": "Refuses ambiguous text, and refuses any cell holding a formula.",
+      "properties": {
+        "type": { "enum": ["cell-type", "type"] },
+        "target": { "$ref": "#/$defs/target" },
+        "valueType": { "enum": ["number", "string", "boolean"] },
+        "targetType": { "enum": ["number", "string", "boolean"], "description": "Alias for valueType." },
+        "expected": { "description": "Optional precondition: the value currently stored." },
+        "preserveLeadingZeros": { "type": "boolean", "default": true, "description": "Refuse a text-to-number conversion that would drop a leading zero, as in a postal code or account number." }
+      },
+      "required": ["type", "target"],
+      "anyOf": [{ "required": ["valueType"] }, { "required": ["targetType"] }],
+      "additionalProperties": false
+    },
+    "dateRepair": {
+      "type": "object",
+      "title": "Store an explicit ISO date",
+      "properties": {
+        "type": { "const": "date" },
+        "target": { "$ref": "#/$defs/target" },
+        "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,3})?Z)?$", "description": "ISO date or UTC timestamp. Calendar-invalid dates such as 2024-02-31 are refused." },
+        "expectedSerial": { "description": "Optional precondition: the value currently stored." },
+        "expected": { "description": "Alias for expectedSerial." }
+      },
+      "required": ["type", "target", "date"],
+      "additionalProperties": false
+    },
+    "validationRepair": {
+      "type": "object",
+      "title": "Set or clear a data-validation rule",
+      "description": "Has no precondition concept; the receipt reports the precondition check as not_applicable. A cell holds one validation: cells of the target that had another rule lose it, and that rule keeps its other cells.",
+      "properties": {
+        "type": { "const": "validation" },
+        "target": { "$ref": "#/$defs/target" },
+        "rule": { "type": "object", "description": "The rule to apply, for example { \"type\": \"list\", \"values\": [\"Open\", \"Closed\"] }. Mutually exclusive with clear." },
+        "clear": { "type": "boolean", "description": "Remove the existing rule instead of setting one." }
+      },
+      "required": ["type", "target"],
+      "oneOf": [{ "required": ["rule"] }, { "required": ["clear"] }],
+      "additionalProperties": false
+    }
+  },
+  "examples": [
+    [
+      { "type": "formula", "target": { "sheetName": "Data", "address": "C3" }, "expectedFormula": "=B3*2", "formula": "=B3*3" },
+      { "type": "cell-type", "target": { "sheetName": "Data", "address": "A1" }, "valueType": "number", "expected": "12" },
+      { "type": "date", "target": { "sheetName": "Data", "address": "D1" }, "date": "2026-01-31" },
+      { "type": "validation", "target": { "sheetName": "Data", "address": "E1" }, "rule": { "type": "list", "values": ["Open", "Closed"] } }
+    ]
+  ]
+}

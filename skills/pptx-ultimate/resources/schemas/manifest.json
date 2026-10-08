@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "name": "dc.xsd",
+      "sha256": "bc1d454db1bb20dfb1867a3fe0cf007775fc4afa33a5df425c12d854f049f1f6",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "docx-ultimate/schemas/dc.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/docx-ultimate/schemas/dc.xsd",
+      "provenance": "Dublin Core 2003-04-02 qualified schema distribution"
+    },
+    {
+      "name": "dcmitype.xsd",
+      "sha256": "4980845d0bedcf45e707fa64eb47492ae4f95ac4ae42f5c3c68b58c0bc9e8e49",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "docx-ultimate/schemas/dcmitype.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/docx-ultimate/schemas/dcmitype.xsd",
+      "provenance": "Dublin Core 2003-04-02 qualified schema distribution"
+    },
+    {
+      "name": "dcterms.xsd",
+      "sha256": "6328c8b574c166f8ebc28d07231e6ee47121e9791689b70c3afa665f22099fed",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "docx-ultimate/schemas/dcterms.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/docx-ultimate/schemas/dcterms.xsd",
+      "provenance": "Dublin Core 2003-04-02 qualified schema distribution"
+    },
+    {
+      "name": "dml-chart.xsd",
+      "sha256": "4de4390a26e7e44e682ed98b39872cce2620f807f5b0de421567a43f74526388",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "pptx-ultimate/schemas/dml-chart.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/pptx-ultimate/schemas/dml-chart.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "dml-chartDrawing.xsd",
+      "sha256": "3fd0586f2637b98bb9886f0e0b67d89e1cc987c2d158cc7deb5f5b9890ced412",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "pptx-ultimate/schemas/dml-chartDrawing.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/pptx-ultimate/schemas/dml-chartDrawing.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "dml-diagram.xsd",
+      "sha256": "809f77f658f71e10f5cfbf99e25c895a23a4e62c81210b59a2fe8c7fb24849d2",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "pptx-ultimate/schemas/dml-diagram.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/pptx-ultimate/schemas/dml-diagram.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "dml-lockedCanvas.xsd",
+      "sha256": "5cb76dabd8b97d1e9308a1700b90c20139be4d50792d21a7f09789f5cccd6026",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "pptx-ultimate/schemas/dml-lockedCanvas.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/pptx-ultimate/schemas/dml-lockedCanvas.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "dml-main.xsd",
+      "sha256": "6978ba7e889070b0c3cb5b546b23e5a6c3516134afc53b87a21f482ca33f3858",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "pptx-ultimate/schemas/dml-main.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/pptx-ultimate/schemas/dml-main.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "dml-picture.xsd",
+      "sha256": "5d389d42befbebd91945d620242347caecd3367f9a3a7cf8d97949507ae1f53c",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "pptx-ultimate/schemas/dml-picture.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/pptx-ultimate/schemas/dml-picture.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "dml-spreadsheetDrawing.xsd",
+      "sha256": "b4532b6d258832953fbb3ee4c711f4fe25d3faf46a10644b2505f17010d01e88",
+      "source_url": "https://ecma-international.org/wp-content/uploads/ECMA-376-4_5th_edition_december_2016.zip",
+      "source_archive_sha256": "bd25da1109f73762356596918bf5ff8b74a1331642dba5f1c1d1dfc6bed34ecd",
+      "inner_archive": "OfficeOpenXML-XMLSchema-Transitional.zip",
+      "inner_archive_sha256": "d34187520749998af306faf1b730e568b0ca6d88ad24638a407c0a9bb4ca04fc",
+      "source_path": "dml-spreadsheetDrawing.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "opc-contentTypes.xsd",
+      "sha256": "5083a39fd5ade6790c291513d5b2a0447087424b04ae02d5f320edce2c5db158",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "docx-ultimate/schemas/opc-contentTypes.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/docx-ultimate/schemas/opc-contentTypes.xsd",
+      "provenance": "ECMA-376 Part 2, 5th edition, December 2021; unmodified OPC schema"
+    },
+    {
+      "name": "opc-coreProperties.xsd",
+      "sha256": "69688ea15f82a870053b9a60c79359063dbcfeec9cdabafabad51a53934bc35b",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "docx-ultimate/schemas/opc-coreProperties.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/docx-ultimate/schemas/opc-coreProperties.xsd",
+      "provenance": "ECMA-376 Part 2, 5th edition, December 2021; unmodified OPC schema"
+    },
+    {
+      "name": "opc-relationships.xsd",
+      "sha256": "ef23284866e5e1dd69eddc4f42b4efa58a9c4c4f7d94b21949887c02534c1ab4",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "docx-ultimate/schemas/opc-relationships.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/docx-ultimate/schemas/opc-relationships.xsd",
+      "provenance": "ECMA-376 Part 2, 5th edition, December 2021; unmodified OPC schema"
+    },
+    {
+      "name": "pml.xsd",
+      "sha256": "39c6396b7b1f096885c3ceba5dab30e3ee14291c45a1d6fa6038ec4db69d88d0",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "pptx-ultimate/schemas/pml.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/pptx-ultimate/schemas/pml.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "root-metadata.xsd",
+      "sha256": "88f2355d73a5c35878109af13a7e1b41e3f115f510694f5ec332acf568738988",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "docx-ultimate/schemas/root-metadata.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/docx-ultimate/schemas/root-metadata.xsd",
+      "provenance": "Authored local schema dependency/entry"
+    },
+    {
+      "name": "shared-commonSimpleTypes.xsd",
+      "sha256": "48675c4f82f6b097434d4b7e313635b790257cca58fa90dd0e8f19c9affa18ed",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "pptx-ultimate/schemas/shared-commonSimpleTypes.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/pptx-ultimate/schemas/shared-commonSimpleTypes.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "shared-documentPropertiesCustom.xsd",
+      "sha256": "9c085407751b9061c1f996f6c39ce58451be22a8d334f09175f0e89e42736285",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "docx-ultimate/schemas/shared-documentPropertiesCustom.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/docx-ultimate/schemas/shared-documentPropertiesCustom.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "shared-documentPropertiesExtended.xsd",
+      "sha256": "bc92e36ccd233722d4c5869bec71ddc7b12e2df56059942cce5a39065cc9c368",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "docx-ultimate/schemas/shared-documentPropertiesExtended.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/docx-ultimate/schemas/shared-documentPropertiesExtended.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "shared-documentPropertiesVariantTypes.xsd",
+      "sha256": "7b5b7413e2c895b1e148e82e292a117d53c7ec65b0696c992edca57b61b4a74b",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "docx-ultimate/schemas/shared-documentPropertiesVariantTypes.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/docx-ultimate/schemas/shared-documentPropertiesVariantTypes.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "shared-relationshipReference.xsd",
+      "sha256": "12264f3c03d738311cd9237d212f1c07479e70f0cbe1ae725d29b36539aef637",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "pptx-ultimate/schemas/shared-relationshipReference.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/pptx-ultimate/schemas/shared-relationshipReference.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "sml.xsd",
+      "sha256": "495debc8fa967b77ed37799747b049832f2c95b2ecdb9f19ddcd68f8c9f96ab9",
+      "source_url": "https://ecma-international.org/wp-content/uploads/ECMA-376-4_5th_edition_december_2016.zip",
+      "source_archive_sha256": "bd25da1109f73762356596918bf5ff8b74a1331642dba5f1c1d1dfc6bed34ecd",
+      "inner_archive": "OfficeOpenXML-XMLSchema-Transitional.zip",
+      "inner_archive_sha256": "d34187520749998af306faf1b730e568b0ca6d88ad24638a407c0a9bb4ca04fc",
+      "source_path": "sml.xsd",
+      "provenance": "ECMA-376 Part 4, 5th edition, December 2016; unmodified Transitional schema"
+    },
+    {
+      "name": "xml.xsd",
+      "sha256": "142e63e969a72a9e4d67a3be0e800c2f3cdc99dde15ad5382d6938b70e920275",
+      "source_commit": "d04efc0e43af4f6550287def636c9934a08d766c",
+      "source_path": "docx-ultimate/schemas/xml.xsd",
+      "source_url": "https://github.com/Ndh474/skills/blob/d04efc0e43af4f6550287def636c9934a08d766c/docx-ultimate/schemas/xml.xsd",
+      "provenance": "Authored local schema dependency/entry"
+    }
+  ]
+}
